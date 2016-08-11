@@ -13,9 +13,9 @@ app.set('view engine', 'ejs');
 
 //add route that renders index view
 //.get takes route (in this case == root path) and function
-app.get('/', function(req, res, next) {
+app.get('/', (req, res, next) => {
   //send file using full path name - app's directory + /views/index.html
-  res.render('index.ejs', {names: ['Taylor', 'Lindsey', 'Canaan', 'Lynn']});
+  res.render('index.ejs', {hobbies: ['Board Games', 'YouTube Video Production', 'Video Games'], skills: ['Java', 'Python', 'CSS/HTML', 'Javascript', 'Project Management', 'Teaching/Tutoring']});
 });
 
 //set up server

@@ -5,8 +5,19 @@
     <title> My First Express App </title>
   </head>
   <body>
-    <% names.forEach(function(name){ %>
-      <h2>Hello, <%= name %></h2>
-    <% }) %>
+    <img width="120" height="130" src="https://lh3.googleusercontent.com/YqcNCtgKfLEkVVPDx9Kk7_MEO8qW5gE3UAVn_ChFFd-pe8uNMhCqnFsFA2Kkm8cLsH7EctKuCG6Rm1eNEtonixTel_IA0n1TgWFE-_jRDsjIPJ8ronu_MatyIVyYvLwL0Q5ea1scROauHsYhJ_bY58SR54TV3RYFwsF6R2YCAjJeRQ4GFtiblK62Q0QpUwno6XYH58f_jIFAfM7usGQfaaTdoUe33PXBN8T74i-a5V1oJwtV-vU8uDEM4QS-JYnP45Prcwl0QPnxCTK8HyaFdOW6DagoGuX11RnDF8lKxE5wLz4eCM4jfihiXau6JU4AEJhGy_bycHaCZPCiaIJYPVSMLvVllm6H-JrvBFkqBE0ifpctz9b0NDTVW9Fww5XQGsaP7kwyAmzoegpd5Jkw-Fk-iNCYn6UODFPYVe-HFY4XkTuuRQAcguHqGnpMTLc-V4Ub5lBF8r8Jp3tbLPn4yyWS5_lEcs506tKoF26Jq0eDGsUcs0-_cooCF78lXwAezba5KbpruHLcRwFPgPTEbtnjBHll4RpT8ZC6WyUYBz11FXAEwvoo1VprMVeaG1H5RFQSAiBP0ewYMVcZZLOJUvbadvErAX8=w612-h653-no"/>
+    <p> Hello! My name is Taylor Kennedy. I am a female web developer in training, currently living in Austin, TX.</p>
+    <ul><b style="font-family: helvetica">Skills</b>
+      <% skills.forEach((skill) => { %>
+        <li><%= skill %></li>
+      <% }) %>
+
+    </ul>
+
+    <ul><b style="font-family: helvetica"> Hobbies </b>
+      <% hobbies.forEach((hobby) => { %>
+        <li><%= hobby %></li>
+      <% }) %>
+    </ul>
   </body>
 </html>
